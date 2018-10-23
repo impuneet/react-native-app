@@ -86,6 +86,6 @@ export default StyleSheet.create({
     marginTop: Platform.OS == "android" ? 30 : null
   },
   HomeSearchIcon: {
-    marginRight: 10
+    marginRight: 9
   }
 });
