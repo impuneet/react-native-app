@@ -15,18 +15,10 @@ import {
 import { Container, Content, Icon } from "native-base";
 import styles from "../StyleSheets/Style";
 import Category from './subComponents/Explore/Category';
-
+import images from '../../res/images/mainImages';
 
 const {height,width} = Dimensions.get('window');
-
 class HomeTab extends Component {
-  //to remove the android header space
-  componentWillMount() {
-    this.startHeaderHeight = 80;
-    if (Platform.OS == "android") {
-      this.startHeaderHeight = 100 + StatusBar.currentHeight;
-    }
-  }
 
   render() {
     return (
@@ -52,10 +44,10 @@ class HomeTab extends Component {
 
             <View style = {styles.HorizontalScrollPanel}  >
                 <ScrollView  horizontal={true}  showsHorizontalScrollIndicator = {false}>
-                    <Category  imageUri = {require('../../assets/home.jpg')}   name='Goa'/>
-                    <Category  imageUri = {require('../../assets/experiences.jpg')}   name='New Delhi'/>
-                    <Category  imageUri = {require('../../assets/restaurant.jpg')}   name='Jaipur'/>
-                    <Category  imageUri = {require('../../assets/home.jpg')}   name='Mumbai'/>
+                    <Category  imageUri = {images.Home}   name='Goa'/>
+                    <Category  imageUri = {images.Experience}   name='New Delhi'/>
+                    <Category  imageUri = {images.Restaurant}   name='Jaipur'/>
+                    <Category  imageUri = {images.Experience}   name='Mumbai'/>
                 </ScrollView>
             </View>
 

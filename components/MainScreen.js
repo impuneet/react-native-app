@@ -7,7 +7,6 @@ import SearchTab from './AppTabNavigator/SearchTab' ;
 import AddMediaTab  from  './AppTabNavigator/AddMediaTab' ;
 import ProfileTab from './AppTabNavigator/ProfileTab' ;
 
-
 export default class MainScreen extends Component {
     static navigationOptions = {
       headerLeft : <Icon name="ios-camera-outline" style={{paddingLeft : 10}}/>,

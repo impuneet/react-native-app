@@ -1,5 +1,5 @@
 import { StyleSheet, Platform, StatusBar,Dimensions } from "react-native";
-
+import colors from '../../res/colors/mainColors';
 let iconSize = 25;
 const {height,width} = Dimensions.get('window');
 export default StyleSheet.create({
@@ -19,7 +19,7 @@ export default StyleSheet.create({
   },
   panelHeader: {
     flex: 1,
-    backgroundColor: "white",
+    backgroundColor: colors.backGround,
     paddingTop: 20
   },
   panelText: {
@@ -35,7 +35,7 @@ export default StyleSheet.create({
     resizeMode: "cover",
     borderRadius: 5,
     borderWidth: 1,
-    borderColor: "grey"
+    borderColor: colors.borderColor
   },
   premiumImagePanel : {
     alignSelf : 'center',
@@ -50,7 +50,7 @@ export default StyleSheet.create({
     width: 130,
     marginLeft: 20,
     borderWidth: 0.5,
-    borderColor: "lightgrey"
+    borderColor: colors.StoryBorder
   },
   TrendingImage: {
     flex: 1,
@@ -65,22 +65,22 @@ export default StyleSheet.create({
   },
   exploreScreenTop: {
     height: Platform.OS == "android" ? StatusBar.currentHeight + 100 : 80,
-    backgroundColor: "white",
+    backgroundColor: colors.backGround,
     borderBottomWidth: 1,
-    borderBottomColor: "#ddddd"
+    borderBottomColor: colors.bottomDivider
   },
   HomeSearchInput: {
     flex: 1,
     fontWeight: "700",
-    backgroundColor: "white"
+    backgroundColor: colors.backGround
   },
   HomeSearchView: {
     flexDirection: "row",
     padding: 10,
-    backgroundColor: "white",
+    backgroundColor: colors.backGround ,
     marginHoriZontal: 20,
     shadowOffset: { width: 0, height: 0 },
-    shadowColor: "black",
+    shadowColor: colors.shadowColor,
     shadowOpacity: 0.2,
     elevation: 1,
     marginTop: Platform.OS == "android" ? 30 : null

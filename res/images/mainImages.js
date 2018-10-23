@@ -1,6 +1,6 @@
 const images = {
-    button: require('./images/button.png'),
-    logo: require('./images/logo.png'),
-    placeholder: require('./images/placeholder.png')
+    Home : require('../../assets/home.jpg'),
+    Experience : require('../../assets/experiences.jpg'),
+    Restaurant : require('../../assets/restaurant.jpg'),
   }
   export default images

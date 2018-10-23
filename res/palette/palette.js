@@ -1,4 +1,5 @@
 import colors from '../colors/mainColors';
+
 const palette = {
   heading: {
     color: colors.title,
