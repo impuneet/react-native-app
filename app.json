@@ -5,6 +5,10 @@
     "slug": "reactFirebaseSample",
     "privacy": "public",
     "sdkVersion": "30.0.0",
+    "android" : {
+      "package":"com.johncy.myapp",
+      "versionCode":1 
+    },
     "platforms": [
       "ios",
       "android"
