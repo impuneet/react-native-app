@@ -3,6 +3,35 @@ import colors from '../../res/colors/mainColors';
 let iconSize = 25;
 const {height,width} = Dimensions.get('window');
 export default StyleSheet.create({
+
+
+  wrapper: {
+    paddingTop: 20
+  },
+  slide1: {
+    flex: 1,
+    alignItems: "center",
+    backgroundColor: "white"
+  },
+  slide2: {
+    flex: 1,
+    alignItems: "center",
+    backgroundColor: "white"
+  },
+  slide3: {
+    flex: 1,
+    alignItems: "center",
+    backgroundColor: "white"
+  },
+  header1: {
+    color: "#65DC97",
+    fontSize: 24,
+    fontWeight: "bold"
+  },
+  text: {
+    color: "#939290",
+    fontSize: 11
+  },
   icon: {
     height: iconSize,
     width: iconSize
